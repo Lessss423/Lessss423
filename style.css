@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2f3136;
+    color: #dcddde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #40444b;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #b9bbbe;
+}
+
+.chat {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: 500px;
+}
+
+.message {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7289da;
+}
+
+.message-content {
+    max-width: 80%;
+    background-color: #2f3136;
+    border: 1px solid #7289da;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: #fff;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    color: #b9bbbe;
+}
+
+.language-selector {
+    margin-top: 20px;
+}
+
+.language-selector button {
+    background-color: #7289da;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+.language-selector button:hover {
+    background-color: #5b6e92;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .message-content {
+        max-width: 90%;
+    }
+
+    .message {
+        gap: 10px;
+    }
+
+    .message-header {
+        font-size: 0.9em;
+    }
+
+    .timestamp {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .avatar img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .message-content {
+        padding: 8px;
+    }
+
+    .username {
+        font-size: 1em;
+    }
+}
