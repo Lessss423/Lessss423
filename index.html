@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Debate sobre procrastinação entre Michael Scott e Dwight Schrute.">
+    <title>Não Procrastine</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <script>
+        function changeLanguage(language) {
+            const elements = document.querySelectorAll("[data-lang]");
+            elements.forEach(el => {
+                const text = el.getAttribute(`data-lang-${language}`);
+                if (text) el.textContent = text;
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 data-lang="en" data-lang-en="Procrastination - Chat" data-lang-pt-br="Procrastinação - Bate-papo">Procrastinação - Bate-papo</h1>
+            <p data-lang="en" data-lang-en="A debate about procrastination between Michael Scott and Dwight Schrute." data-lang-pt-br="Debate sobre procrastinação entre Michael Scott e Dwight Schrute.">
+                Debate sobre procrastinação entre Michael Scott e Dwight Schrute.
+            </p>
+        </header>
+
+        <div class="chat">
+            <!-- Mensagem Michael Scott -->
+            <div class="message">
+                <div class="avatar">
+                    <img src="https://i.postimg.cc/dLwp3QX1/ff525a0b059cb41cfe4800da4570b767.jpg" alt="Michael Scott">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="username">Michael Scott</span>
+                        <span class="timestamp">14:32</span>
+                    </div>
+                    <p>Ah, procrastinação... Você sabe, às vezes acho que é mais produtivo adiar as coisas. Deixe para amanhã o que você pode adiar hoje. Talvez se eu tivesse feito mais hoje, estaria mais tranquilo... mas é mais fácil falar do que fazer, não é?</p>
+                </div>
+            </div>
+
+            <!-- Mensagem Dwight Schrute -->
+            <div class="message">
+                <div class="avatar">
+                    <img src="https://i.postimg.cc/dDYwRYpM/0ac72c1d464d510721e7c9b4f85ec6d6.jpg" alt="Dwight Schrute">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="username">Dwight Schrute</span>
+                        <span class="timestamp">14:34</span>
+                    </div>
+                    <p>Michael, a procrastinação é a morte da produtividade. Você não pode continuar se permitindo cair nesse ciclo. Se fosse eu, teria feito tudo ontem. Vamos ser realistas, o trabalho só aumenta e a procrastinação só nos faz sentir mais ansiosos. Vamos mudar isso agora!</p>
+                </div>
+            </div>
+
+            <!-- Mensagem Michael Scott -->
+            <div class="message">
+                <div class="avatar">
+                    <img src="https://i.postimg.cc/dLwp3QX1/ff525a0b059cb41cfe4800da4570b767.jpg" alt="Michael Scott">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="username">Michael Scott</span>
+                        <span class="timestamp">14:36</span>
+                    </div>
+                    <p>Talvez você tenha razão, Dwight. Mas o que aconteceria se todo mundo fosse tão focado quanto você? Eles se tornariam robôs! Não podemos viver a vida sem um pouco de relaxamento, não é? Mas entendo o seu ponto. Talvez eu devesse tentar ser mais organizado. Mas, por enquanto, vou deixar para depois.</p>
+                </div>
+            </div>
+
+            <!-- Mensagem Dwight Schrute -->
+            <div class="message">
+                <div class="avatar">
+                    <img src="https://i.postimg.cc/dDYwRYpM/0ac72c1d464d510721e7c9b4f85ec6d6.jpg" alt="Dwight Schrute">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="username">Dwight Schrute</span>
+                        <span class="timestamp">14:38</span>
+                    </div>
+                    <p>Michael, você precisa encarar isso de frente. Não é sobre ser robô, é sobre ser produtivo. O que eu quero te dizer é: não deixe para amanhã o que pode ser feito agora, ou o amanhã nunca chegará. E é aí que você acaba se afundando na procrastinação.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões para mudar de idioma -->
+        <div class="language-selector">
+            <button onclick="changeLanguage('pt-br')">Português</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+
+        <!-- Créditos -->
+        <footer>
+            <p>Este site foi criado por <strong>@johnhazam</strong></p>
+          
+  <p>Isso não é totalmente sério (meio que é 👀), então por favor não fique bravo(a) com a pessoa que te enviou isso. Dito isso, se você ver a URL desse site na bio/status de alguém, se prepare para ser ignorado(a) se for um procrastinador nato!</p>
+         
+   <p><a href="https://pt.wikipedia.org/wiki/Procrastinação" target="_blank">Leia mais sobre procrastinação na Wikipédia</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+
